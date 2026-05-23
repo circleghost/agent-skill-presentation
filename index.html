@@ -2920,7 +2920,7 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
         <div style="display:flex;flex-direction:column;gap:2.6vh">
           <div data-anim="title" style="display:flex;flex-direction:column;gap:1vh">
             <span class="t-meta" style="letter-spacing:.2em">手把手實戰原始碼 · SOURCE CODE</span>
-            <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.4vw,7vh);line-height:1.1;letter-spacing:-.02em">手把手寫一個 IG 影片下載 Skill</h2>
+            <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(3.6vw,5.5vh);line-height:1.15;letter-spacing:-.02em;white-space:nowrap">實戰：IG 影片下載 Skill</h2>
           </div>
           
           <!-- VS Code window CSS mockup for IG Downloader Skill -->
@@ -2933,18 +2933,26 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
               <span style="font-family:var(--sans);font-size:max(11px,0.7vw);color:#8e8e8e;margin-left:2vw">SKILL.md ── VS Code</span>
             </div>
             <!-- Code content -->
-            <div style="padding:2vh 1.6vw;font-family:var(--mono);color:#d4d4d4;font-size:max(12px,0.8vw);line-height:1.4;box-sizing:border-box">
+            <div style="padding:2vh 1.6vw;font-family:var(--mono);color:#d4d4d4;font-size:max(11px,0.72vw);line-height:1.45;box-sizing:border-box">
               <div style="color:#6a9955">---</div>
               <div><span style="color:#9cdcfe">name</span>: <span style="color:#ce9178">ig-reel-downloader</span></div>
-              <div><span style="color:#9cdcfe">description</span>: <span style="color:#ce9178">當貼上 instagram.com/reel/ 連結或說「下載 IG」時觸發</span></div>
+              <div><span style="color:#9cdcfe">description</span>: <span style="color:#ce9178">當貼上 instagram.com/reel/ 連結或說「下載 IG」時觸發。</span></div>
               <div style="color:#6a9955">---</div>
               <br>
               <div style="color:#569cd6;font-weight:600"># IG Reel Downloader</div>
+              <br>
+              <div style="color:#569cd6;font-weight:600">## 何時使用此 skill</div>
+              <div>- 使用者貼上 <span style="color:#ce9178">instagram.com/reel/</span> 連結</div>
+              <div>- 提到「下載 IG」「存這個 reel」「下載 Instagram」</div>
+              <br>
               <div style="color:#569cd6;font-weight:600">## Critical SOP</div>
-              <div>1. 執行 <span style="color:#4ec9b0">scripts/ensure_dirs.sh</span> 確保分類資料夾存在。</div>
-              <div>2. 跑 <span style="color:#4ec9b0">scripts/probe.sh</span> 抓取影片 description。</div>
+              <div>1. 執行 <span style="color:#4ec9b0">bash scripts/ensure_dirs.sh</span> 確保分類目錄存在。</div>
+              <div>2. 跑 <span style="color:#4ec9b0">bash scripts/probe.sh &lt;URL&gt;</span> 抓取影片 description。</div>
               <div>3. 依主題判斷分類（生態、美食、旅遊、知識、生活、迷因）。</div>
-              <div>4. 跑 <span style="color:#4ec9b0">scripts/fetch.sh</span> 下載影片至對應分類目錄。</div>
+              <div>4. 跑 <span style="color:#4ec9b0">bash scripts/fetch.sh &lt;URL&gt; &lt;分類&gt;</span> 下載到對應目錄。</div>
+              <br>
+              <div style="color:#569cd6;font-weight:600">## Response Style</div>
+              <div>- 開頭以「魁哥。」起頭，字句精簡，嚴禁廢話。</div>
             </div>
           </div>
         </div>
@@ -2954,13 +2962,13 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
             <div data-anim="kpi-1" style="display:flex;flex-direction:column;gap:.6vh">
               <div style="height:1px;background:var(--ink)"></div>
               <span class="t-meta">SEMANTIC CATEGORIZATION</span>
-              <span style="font-family:var(--sans);font-weight:200;font-size:min(4.2vw,7vh);line-height:.95;letter-spacing:-.04em">智慧語意分類</span>
+              <span style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:min(3vw,4.8vh);line-height:1;letter-spacing:-.02em;white-space:nowrap;color:var(--text-primary)">智慧語意分類</span>
               <p style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1vw);color:var(--text-secondary);margin-top:1.6vh">AI 讀完影片 metadata，自動將影片歸類到美食、生態等子資料夾，省去手動分類！</p>
             </div>
             <div data-anim="kpi-2" style="display:flex;flex-direction:column;gap:.6vh">
               <div style="height:1px;background:var(--ink)"></div>
               <span class="t-meta">TOOL DELEGATION</span>
-              <span style="font-family:var(--sans);font-weight:200;font-size:min(4.2vw,7vh);line-height:.95;letter-spacing:-.04em">大腦與雙手協同</span>
+              <span style="font-family:var(--sans),var(--sans-zh);font-weight:300;font-size:min(3vw,4.8vh);line-height:1;letter-spacing:-.02em;white-space:nowrap;color:var(--text-primary)">大腦與雙手協同</span>
               <p style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1vw);color:var(--text-secondary);margin-top:1.6vh">AI 負責聰明的語意判斷，並將實體影片下載與目錄操作交給 bash 腳本，穩固自動化！</p>
             </div>
           </div>
