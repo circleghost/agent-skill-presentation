@@ -2913,17 +2913,17 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
   <section class="slide light" data-layout="S21" data-animate="tech-spec">
     <div class="canvas-card">
       <div class="chrome-min">
-        <div class="l">MODULE 4 · GIT COMMIT SKILL CODE</div>
+        <div class="l">MODULE 4 · IG REELS DOWNLOADER SKILL CODE</div>
         <div class="r">35 / 42</div>
       </div>
       <div class="tech-spec" style="flex:1;padding:0;display:grid;grid-template-columns:1fr 1.3fr;gap:4vw;align-items:start">
         <div style="display:flex;flex-direction:column;gap:2.6vh">
           <div data-anim="title" style="display:flex;flex-direction:column;gap:1vh">
             <span class="t-meta" style="letter-spacing:.2em">手把手實戰原始碼 · SOURCE CODE</span>
-            <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.4vw,7vh);line-height:1.1;letter-spacing:-.02em">手把手寫一個 Git Commit 規範 Skill</h2>
+            <h2 style="font-family:var(--sans),var(--sans-zh);font-weight:200;font-size:min(4.4vw,7vh);line-height:1.1;letter-spacing:-.02em">手把手寫一個 IG 影片下載 Skill</h2>
           </div>
           
-          <!-- VS Code window CSS mockup for Git Commit Skill -->
+          <!-- VS Code window CSS mockup for IG Downloader Skill -->
           <div data-anim="left" style="background:#1e1e1e;border:1px solid #3c3c3c;padding:0;box-sizing:border-box;width:100%;display:flex;flex-direction:column">
             <!-- macOS Window Controls Bar -->
             <div style="background:#2d2d2d;padding:1vh 1vw;display:flex;align-items:center;gap:6px;border-bottom:1px solid #3c3c3c">
@@ -2933,20 +2933,18 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
               <span style="font-family:var(--sans);font-size:max(11px,0.7vw);color:#8e8e8e;margin-left:2vw">SKILL.md ── VS Code</span>
             </div>
             <!-- Code content -->
-            <div style="padding:2vh 1.6vw;font-family:var(--mono);color:#d4d4d4;font-size:max(12px,0.8vw);line-height:1.45;box-sizing:border-box">
+            <div style="padding:2vh 1.6vw;font-family:var(--mono);color:#d4d4d4;font-size:max(12px,0.8vw);line-height:1.4;box-sizing:border-box">
               <div style="color:#6a9955">---</div>
-              <div><span style="color:#9cdcfe">name</span>: <span style="color:#ce9178">git-commit-helper</span></div>
-              <div><span style="color:#9cdcfe">description</span>: <span style="color:#ce9178">當使用者請求提交程式碼、撰寫 Git Commit 紀錄時匹配</span></div>
+              <div><span style="color:#9cdcfe">name</span>: <span style="color:#ce9178">ig-reel-downloader</span></div>
+              <div><span style="color:#9cdcfe">description</span>: <span style="color:#ce9178">當貼上 instagram.com/reel/ 連結或說「下載 IG」時觸發</span></div>
               <div style="color:#6a9955">---</div>
               <br>
-              <div style="color:#569cd6;font-weight:600"># Git Commit 規範專家</div>
-              <div style="color:#569cd6;font-weight:600">## Critical Rules</div>
-              <div style="color:#b5cea8">- 嚴格遵循 Angular Commit 規範 (如 feat:, fix:)，嚴禁隨意命名！</div>
-              <br>
-              <div style="color:#569cd6;font-weight:600">## SOP</div>
-              <div>1. 讀取 『git diff』 程式碼修改紀錄。</div>
-              <div>2. 整理出本次修改的 feat / fix 核心重點。</div>
-              <div>3. 輸出規範的 Git Commit 訊息並詢問主人是否一鍵提交。</div>
+              <div style="color:#569cd6;font-weight:600"># IG Reel Downloader</div>
+              <div style="color:#569cd6;font-weight:600">## Critical SOP</div>
+              <div>1. 執行 <span style="color:#4ec9b0">scripts/ensure_dirs.sh</span> 確保分類資料夾存在。</div>
+              <div>2. 跑 <span style="color:#4ec9b0">scripts/probe.sh</span> 抓取影片 description。</div>
+              <div>3. 依主題判斷分類（生態、美食、旅遊、知識、生活、迷因）。</div>
+              <div>4. 跑 <span style="color:#4ec9b0">scripts/fetch.sh</span> 下載影片至對應分類目錄。</div>
             </div>
           </div>
         </div>
@@ -2955,15 +2953,15 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
           <div class="spec-kpi-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:2vw">
             <div data-anim="kpi-1" style="display:flex;flex-direction:column;gap:.6vh">
               <div style="height:1px;background:var(--ink)"></div>
-              <span class="t-meta">ANGULAR COMMIT SPEC</span>
-              <span style="font-family:var(--sans);font-weight:200;font-size:min(4.2vw,7vh);line-height:.95;letter-spacing:-.04em">強固定規範</span>
-              <p style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1vw);color:var(--text-secondary);margin-top:1.6vh">說明書限制 AI 寫 commit 必須有標準標頭，拒絕寫出「update」、「fixed」等模糊垃圾描述！</p>
+              <span class="t-meta">SEMANTIC CATEGORIZATION</span>
+              <span style="font-family:var(--sans);font-weight:200;font-size:min(4.2vw,7vh);line-height:.95;letter-spacing:-.04em">智慧語意分類</span>
+              <p style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1vw);color:var(--text-secondary);margin-top:1.6vh">AI 讀完影片 metadata，自動將影片歸類到美食、生態等子資料夾，省去手動分類！</p>
             </div>
             <div data-anim="kpi-2" style="display:flex;flex-direction:column;gap:.6vh">
               <div style="height:1px;background:var(--ink)"></div>
-              <span class="t-meta">EASY MAINTENANCE</span>
-              <span style="font-family:var(--sans);font-weight:200;font-size:min(4.2vw,7vh);line-height:.95;letter-spacing:-.04em">極簡記事本</span>
-              <p style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1vw);color:var(--text-secondary);margin-top:1.6vh">純文字修改說明書，不需重構任何複雜代碼，全團隊一秒同步最新 commit 規範！</p>
+              <span class="t-meta">TOOL DELEGATION</span>
+              <span style="font-family:var(--sans);font-weight:200;font-size:min(4.2vw,7vh);line-height:.95;letter-spacing:-.04em">大腦與雙手協同</span>
+              <p style="font-family:var(--sans),var(--sans-zh);font-size:max(15px,1vw);color:var(--text-secondary);margin-top:1.6vh">AI 負責聰明的語意判斷，並將實體影片下載與目錄操作交給 bash 腳本，穩固自動化！</p>
             </div>
           </div>
           
@@ -2971,7 +2969,7 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
             <div data-anim="stat" style="display:flex;gap:4vw">
               <div>
                 <span class="t-meta" style="color:var(--text-helper)">WRITING TIME</span>
-                <p style="font-family:var(--sans);font-weight:400;font-size:16px;color:var(--text-primary);margin-top:.4vh">不用懂程式碼，5分鐘完成</p>
+                <p style="font-family:var(--sans);font-weight:400;font-size:16px;color:var(--text-primary);margin-top:.4vh">不用懂複雜程式碼，5分鐘完成</p>
               </div>
             </div>
           </div>
@@ -2999,10 +2997,10 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
             <div style="height:1px;background:var(--border-subtle)"></div>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2vh">
               <li style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,.94vw);line-height:1.6;color:var(--text-secondary)">
-                <strong style="color:var(--text-primary);font-weight:500">寫入標準範例 ──</strong> 在 references 目錄下建立 commit_examples.md，寫明不同 feat / fix 情境的 commit 優秀案例。
+                <strong style="color:var(--text-primary);font-weight:500">寫入分類對照小抄 ──</strong> 在 references 目錄下建立 category_rules.md，詳細寫明美食、生態等主題判定規則與範例。
               </li>
               <li style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,.94vw);line-height:1.6;color:var(--text-secondary)">
-                <strong style="color:var(--text-primary);font-weight:500">按需閱讀 ──</strong> 大腦平常不讀取範例，只有在 AI 糾結「feat 還是 chore」時，才精準翻閱小抄，零干擾！
+                <strong style="color:var(--text-primary);font-weight:500">按需閱讀 ──</strong> 大腦平時保持輕裝，只有在面臨「看起來像生活、又像旅遊」的模糊分類時，才精準翻閱小抄，零干擾！
               </li>
             </ul>
           </div>
@@ -3015,10 +3013,10 @@ You are a highly-capable, autonomous AI system. You must maintain strict complia
             <div style="height:1px;background:var(--accent);opacity:.3"></div>
             <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:2vh">
               <li style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,.94vw);line-height:1.6;color:var(--text-secondary)">
-                <strong style="color:var(--text-primary);font-weight:500">寫入自動執行 ──</strong> 在 scripts 目錄下寫入 『commit.sh』 腳本，封裝 『git add . &amp;&amp; git commit -m "$1"』 物理命令。
+                <strong style="color:var(--text-primary);font-weight:500">寫入下載實體腳本 ──</strong> 在 scripts 目錄下寫入 ensure_dirs.sh 和 fetch.sh，用來建立目錄和呼叫 yt-dlp 下載影片。
               </li>
               <li style="font-family:var(--sans),var(--sans-zh);font-size:max(16px,.94vw);line-height:1.6;color:var(--text-secondary)">
-                <strong style="color:var(--text-primary);font-weight:500">一指物理提交 ──</strong> AI 寫完 commit 訊息後，依據 SOP 呼叫 『commit.sh』 隔離執行本機命令，完成 100% 物理自動化！
+                <strong style="color:var(--text-primary);font-weight:500">一指實體下載 ──</strong> AI 判斷完分類後，依說明書指示，呼叫 fetch.sh 自動化下載並合併影音，完成 100% 物理自動化！
               </li>
             </ul>
           </div>
